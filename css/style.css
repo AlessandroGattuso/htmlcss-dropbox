@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.blue-btn{
+  border: none;
+  color: white;
+  background-color: rgb(1,96,255);
+}
+
+/* Header */
+header{
+  font-size: 14px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+header .container{
+  width: inherit;
+  display: flex;
+}
+
+header .row{
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container,
+.nav-item{
+  padding: 12px;
+}
+
+.nav-item{
+  cursor: pointer;
+  color: rgb(70, 70, 70);
+}
+
+.nav-item:hover{
+  color: rgb(1,96,255);
+}
+
+header button{
+  padding: 5px 13px;
+  margin: 10px;
+  height: auto;
+}
+/*<------>*/
+
+/* Main */
+
+/*<---->*/
+
+/* Footer */
+/*<------>*/
+
+/* Utils */
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+}
+/*<----->*/
