@@ -27,8 +27,8 @@ section{
     width: 60%;
   }
 
-  .container-40{
-    width: 40%;
+  .container-55{
+    width: 55%;
   }
 
 /*row*/
@@ -39,6 +39,21 @@ section{
 /*columns*/
   .col-40{
     width: 40%;
+  }
+
+  .col-60{
+    width: 60%;
+  }
+
+/* grid */
+  .grid{
+    display: flex;
+    row-gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .grid-item{
+    width: calc(100%/3 - 15px);
   }
 
 /* buttons */
@@ -52,9 +67,6 @@ section{
     transition: all 1s;
   }
 
-  .col-60{
-    width: 60%;
-  }
 
   .blue-btn{
     border: none;
@@ -89,6 +101,7 @@ header .row{
 }
 
 header nav{
+  min-width: 520px;
   display: flex;
 }
 
@@ -166,6 +179,27 @@ main{
     row-gap: 50px;
     flex-direction: column;
   }
+
+  .long-grid-y{
+    width: 100%;
+  }
+
+  .long-grid-y .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .long-grid-y .grid-item{
+    border: 1px solid rgb(59, 59, 59);
+  }
+
+  .long-grid-y .grid-item-header{
+    padding: 4px 0px;
+    font-size: 13px;
+    color: rgb(59, 59, 59);
+    border-bottom: 1px solid rgb(59, 59, 59);
+  }
 /*<---->*/
 
 /* Footer */
@@ -176,7 +210,7 @@ main{
     cursor: pointer;
   }
 
-  /* display */
+  /* Display */
 
     /* flex */
     .flex{
@@ -204,6 +238,10 @@ main{
   /* Margin */
   .mr-10{
     margin-right: 10px;
+  }
+
+  .mr-5{
+    margin-right: 5px;
   }
 
   .mr-60{
