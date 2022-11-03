@@ -8,8 +8,35 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+button{
+  height: auto;
+  width: auto;
+}
+
 button:hover{
   cursor: pointer;
+  transition: all 1s;
+}
+
+.container{
+  display: flex;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+}
+
+.container-60{
+  width: 60%;
+}
+
+.col-40{
+  width: 40%;
+}
+
+.col-60{
+  width: 60%;
 }
 
 .blue-btn{
@@ -18,9 +45,14 @@ button:hover{
   background-color: rgb(1,96,255);
 }
 
+.blue-btn:hover{
+  background-color: rgb(54, 127, 255);
+}
+
 /* Header */
 header{
-  font-size: 14px;
+  z-index: 100;
+  background-color: white;
   width: 100%;
   height: 60px;
   display: flex;
@@ -39,14 +71,20 @@ header .row{
   justify-content: space-between;
 }
 
+header nav{
+  display: flex;
+}
+
 .logo-container,
 .nav-item{
-  padding: 12px;
+  padding: 0px 12px;
 }
 
 .nav-item{
+  height: auto;
   cursor: pointer;
   color: rgb(70, 70, 70);
+  transition: all 0.5s;
 }
 
 .nav-item:hover{
@@ -55,12 +93,57 @@ header .row{
 
 header button{
   padding: 5px 13px;
-  margin: 10px;
-  height: auto;
 }
 /*<------>*/
 
 /* Main */
+main{
+  padding-top: 60px;
+}
+
+/* Back-ground lightblue section */
+.bg-lightblue .container{
+  font-size: 13px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  row-gap: 35px;
+}
+
+.bg-lightblue h1{
+ font-size: 50px;
+}
+
+.bg-lightblue .row{
+  width: 100%;
+}
+
+.bg-lightblue .col-40{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.bg-lightblue button{
+  width: 180px;         /* Review */
+  padding: 10px;
+}
+
+.bg-lightblue span{
+  cursor: pointer;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.bg-lightblue .col-60{
+  position: relative;
+}
+
+.bg-lightblue .img-exeed{
+  position: absolute;
+  left: 0;
+  width: 700px;
+}
+
 
 /*<---->*/
 
@@ -74,5 +157,23 @@ header button{
 
 .flex{
   display: flex;
+}
+
+/* Padding */
+.pt-40{
+  padding-top: 40px;
+}
+
+.pb-30{
+  padding-bottom: 30px;
+}
+
+/* Margin */
+.mr-10{
+  margin-right: 10px;
+}
+/* Background-color */
+.bg-lightblue{
+  background-color: rgb(180,208,231);
 }
 /*<----->*/
