@@ -27,10 +27,6 @@ section{
     width: 60%;
   }
 
-  .container-55{
-    width: 55%;
-  }
-
 /*row*/
   .row{
     display: flex;
@@ -67,7 +63,6 @@ section{
     transition: all 1s;
   }
 
-
   .blue-btn{
     border: none;
     color: white;
@@ -77,6 +72,23 @@ section{
   .blue-btn:hover{
     background-color: rgb(54, 127, 255);
   }
+
+ /* Lists*/
+    ul{
+      list-style-type: none;
+    }
+  /* Links */
+    a{
+      color:rgb(54, 127, 255)
+    }
+
+  /* hr lines*/
+    .line-sm{
+      width: 45px;
+      height: 1px;
+      border: 0; 
+      border-top: 1px solid  rgb(211, 211, 211);
+    }
 
 /* Header */
 header{
@@ -140,7 +152,7 @@ main{
   }
 
   .bg-lightblue h1{
-  font-size: 50px;
+   font-size: 50px;
   }
 
   .bg-lightblue .row{
@@ -181,6 +193,7 @@ main{
   }
 
   .long-grid-y{
+    min-width: 650px;
     width: 100%;
   }
 
@@ -191,15 +204,64 @@ main{
   }
 
   .long-grid-y .grid-item{
-    border: 1px solid rgb(59, 59, 59);
+    border: 1px solid rgb(211, 211, 211);
   }
 
   .long-grid-y .grid-item-header{
-    padding: 4px 0px;
+    padding: 6px 0px;
     font-size: 13px;
-    color: rgb(59, 59, 59);
-    border-bottom: 1px solid rgb(59, 59, 59);
+    color: rgb(87, 87, 87);
+    border-bottom: 1px solid rgb(211, 211, 211);
   }
+
+  .long-grid-y .grid-item-main{
+    height: 700px;
+    width: 85%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin: 0 auto;
+  }
+
+  .long-grid-y  .grid-item-main > :not(h3){ /* appy this call to every tag that is not a h3*/ 
+    font-size: 12px;
+  }
+
+  .month-text{
+    display: block;
+    padding-top: 7px;
+    color: gray;
+  }
+
+  .long-grid-y li{
+    display: flex;
+    column-gap: 5px;
+    margin: 15px 0px;
+  }
+
+  .long-grid-y button{
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .checked-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .checked-list li{
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .checked-list li:before{
+    content: '\2714 ';
+    font-size: 15px;
+    color: rgb(0, 94, 255);
+  }
+
 /*<---->*/
 
 /* Footer */
@@ -211,6 +273,10 @@ main{
   }
 
   /* Display */
+
+  .block{
+    display: block;
+  }
 
     /* flex */
     .flex{
@@ -224,11 +290,19 @@ main{
 
   /* Padding */
   .ptb-80{
-    padding: 80px 0;
+    padding: 80px 0px;
   }
 
-  .pt-40{
-    padding-top: 40px;
+  .ptb-40{
+    padding: 40px 0px;
+  }
+
+  .pb-25{
+    margin-bottom: 25px;
+  }
+
+  .pt-20{
+    padding-top: 20px;
   }
 
   .pb-15{
@@ -236,6 +310,10 @@ main{
   }
 
   /* Margin */
+  .mr-60{
+    margin-right: 60px;
+  }
+
   .mr-10{
     margin-right: 10px;
   }
@@ -243,9 +321,9 @@ main{
   .mr-5{
     margin-right: 5px;
   }
-
-  .mr-60{
-    margin-right: 60px;
+  
+  .mt-40{
+    margin-top: 40px;
   }
   /* Background-color */
   .bg-lightblue{
