@@ -215,7 +215,7 @@ main{
   }
 
   .long-grid-y .grid-item-main{
-    height: 700px;
+    height: 710px;
     width: 85%;
     padding: 20px 0px;
     display: flex;
@@ -321,12 +321,14 @@ main{
   .mr-5{
     margin-right: 5px;
   }
-  
-  .mt-40{
-    margin-top: 40px;
-  }
+
   /* Background-color */
   .bg-lightblue{
     background-color: rgb(180,208,231);
+  }
+
+  /*height*/
+  .height-160{
+    height: 160px;
   }
 /*<----->*/
