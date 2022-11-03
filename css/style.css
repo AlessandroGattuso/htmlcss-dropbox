@@ -48,7 +48,7 @@ section{
     flex-wrap: wrap;
   }
 
-  .grid-item{
+  .grid-item-30{
     width: calc(100%/3 - 15px);
   }
 
@@ -67,6 +67,7 @@ section{
     border: none;
     color: white;
     background-color: rgb(1,96,255);
+    padding: 10px;
   }
 
   .blue-btn:hover{
@@ -133,9 +134,10 @@ header nav{
   color: rgb(1,96,255);
 }
 
-header button{
+header .blue-btn{
   padding: 5px 13px;
 }
+
 /*<------>*/
 
 /* Main */
@@ -167,7 +169,6 @@ main{
 
   .bg-lightblue button{
     width: 180px;         /* Review */
-    padding: 10px;
   }
 
   .bg-lightblue span{
@@ -193,6 +194,9 @@ main{
   }
 
   .long-grid-y{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     min-width: 650px;
     width: 100%;
   }
@@ -207,14 +211,14 @@ main{
     border: 1px solid rgb(211, 211, 211);
   }
 
-  .long-grid-y .grid-item-header{
+  .long-grid-y .grid-item-title{
     padding: 6px 0px;
     font-size: 13px;
     color: rgb(87, 87, 87);
     border-bottom: 1px solid rgb(211, 211, 211);
   }
 
-  .long-grid-y .grid-item-main{
+  .long-grid-y .grid-item-content{
     height: 710px;
     width: 85%;
     padding: 20px 0px;
@@ -224,7 +228,7 @@ main{
     margin: 0 auto;
   }
 
-  .long-grid-y  .grid-item-main > :not(h3){ /* appy this call to every tag that is not a h3*/ 
+  .long-grid-y  .grid-item-content > :not(h3){ /* appy this call to every tag that is not a h3*/ 
     font-size: 12px;
   }
 
@@ -242,7 +246,6 @@ main{
 
   .long-grid-y button{
     width: 100%;
-    padding: 10px 0px;
   }
 
   .checked-list{
@@ -260,6 +263,14 @@ main{
     content: '\2714 ';
     font-size: 15px;
     color: rgb(0, 94, 255);
+  }
+
+  .grid-item-full-content{
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
 /*<---->*/
@@ -286,6 +297,10 @@ main{
     .flex-center{
       align-items: center;
       justify-content: center;
+    }
+
+    .jc-space-between{
+      justify-content: space-between;
     }
 
   /* Padding */
@@ -322,13 +337,35 @@ main{
     margin-right: 5px;
   }
 
+  .mb-50{
+    margin-bottom: 50px;
+  }
+
   /* Background-color */
   .bg-lightblue{
     background-color: rgb(180,208,231);
   }
 
-  /*height*/
+  /* Height */
   .height-160{
     height: 160px;
+  }
+
+  /* Witdh */
+  .width-100{
+    width: 100%;
+  }
+
+  .width-70{
+    width: 70%;
+  }
+
+  /* font */
+  .font-size-14{
+    font-size: 14px;
+  }
+
+  .text-gray{
+    color: gray;
   }
 /*<----->*/
