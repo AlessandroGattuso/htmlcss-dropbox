@@ -111,6 +111,12 @@ button:hover{
   border-color: rgb(0, 94, 255);
 }
 
+.white-btn{
+  border: none;
+  background-color: white;
+  padding: 8px 40px;
+}
+
   /* Images */
   img{
     width: 100%;
@@ -214,10 +220,6 @@ main{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-  }
-
-  .bg-lightblue button{
-    width: 180px;         /* Review */
   }
 
   .bg-lightblue a{
@@ -344,6 +346,12 @@ main{
   .square-sm{
     width: 50%;
     height: 50%;
+  }
+
+  .container.height-250{
+    justify-content: center;
+    align-items: center;
+    column-gap: 150px;
   }
 /*<---->*/
 
@@ -501,6 +509,9 @@ main{
   .height-160{
     height: 160px;
   }
+  .height-250{
+    height: 250px;
+  }
 
   /* Witdh */
   .width-100{
@@ -511,6 +522,10 @@ main{
     width: 70%;
   }
 
+  .width-300{
+    width: 300px;
+  }
+
   .width-150{
     width: 150px;
   }
@@ -518,6 +533,10 @@ main{
   /* Font */
   .font-size-14{
     font-size: 14px;
+  }
+
+  .text-magenta{
+    color:rgb(75, 10, 30)
   }
 
   .text-gray{
