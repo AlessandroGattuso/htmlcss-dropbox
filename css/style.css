@@ -28,12 +28,16 @@ section{
   margin: 0 auto;
 }
 
-.container-60{
-  width: 60%;
-}
-
 .container-100{
   width: 100%;
+}
+
+.container-70{
+  width: 70%;
+}
+
+.container-60{
+  width: 60%;
 }
 
 /*row*/
@@ -360,11 +364,15 @@ main{
   }
 
   label{
-    font-weight: 700;
     display: block;    
     padding: 25px 0px;
     cursor: pointer;
     transition: ease 1s;
+  }
+
+  label div.flex{
+    font-size: 12px;
+    font-weight: 700;
   }
 
   label:hover{
@@ -387,6 +395,47 @@ main{
 /*<---->*/
 
 /* Footer */
+footer{
+  font-size: 12px;
+  color: white;
+  margin-top: 120px;
+  padding-top: 80px;
+  height: 400px;
+  background-color: black;
+}
+
+footer h3{
+  font-size: 18.73px;
+}
+
+footer .row{
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer .col{
+  row-gap: 10px;
+  flex-direction: column;
+  width: calc(100%/5 - 50px);
+}
+
+footer ul{
+  color: rgb(215, 215, 215);
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+footer li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer hr{
+  width: 100px;
+  border-color: rgb(215, 215, 215);
+}
 /*<------>*/
 
 /* Utils */
@@ -424,6 +473,11 @@ main{
     .row-gap-30{
       row-gap: 30px;
     }
+
+    .row-gap-80{
+      row-gap: 80px;
+    }
+
     .wrap{
       flex-wrap: wrap;
     }
@@ -435,6 +489,10 @@ main{
 
   .pb-80{
     padding-bottom: 80px;
+  }
+
+  .pt-120{
+    padding-top: 120px;
   }
 
   .pt-80{
@@ -456,10 +514,15 @@ main{
   .pt-20{
     padding-top: 20px;
   }
+  
+  .pr-20{
+    padding-right: 20px;
+  }
 
   .pb-15{
     padding-bottom: 15px;
   }
+
 
   /* Margin */
   .mb-100{
@@ -531,6 +594,10 @@ main{
     border: 10px solid rgb(202, 255, 202);
   }
 
+  .border-lightgray{
+    border-color: rgb(157, 157, 157);
+  }
+
   /* Images */
   .white-img{
     filter: invert(1);
@@ -577,4 +644,9 @@ main{
   .text-gray{
     color: gray;
   }
+
+  .text-lightgray{
+    color: rgb(157, 157, 157);
+  }
+
 /*<----->*/
