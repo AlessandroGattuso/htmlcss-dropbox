@@ -14,7 +14,7 @@ body{
 
 /* section */
 section{
-  width: 100%;
+ width: inherit;
 }
 
 
@@ -239,8 +239,7 @@ main{
 
   .bg-lightblue .img-exeed{
     position: absolute;
-    left: 0;
-    width: 650px;
+    width: calc(145%);
   }
 
   /* Cards section */
@@ -359,37 +358,37 @@ main{
   }
 
   /*FAQ section*/
-  input {
+  .FAQ input {
     display: none;
   }
 
-  label{
+  .FAQ label{
     display: block;    
     padding: 25px 0px;
     cursor: pointer;
     transition: ease 1s;
   }
 
-  label div.flex{
+  .FAQ label div.flex{
     font-size: 12px;
     font-weight: 700;
   }
 
-  label:hover{
+  .FAQ label:hover{
     background-color:rgb(211, 211, 211);
   }
 
-  .content {
+  .FAQ .content {
     font-size: 14px;
     background: rgb(238, 242, 243);
     padding: 10px 25px;
   }
 
-  input + label + .content {
+  .FAQ input + label + .content {
     display: none;
   }
 
-  input:checked + label + .content {
+  .FAQ input:checked + label + .content {
     display: block;
   }
 /*<---->*/
